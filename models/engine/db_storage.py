@@ -2,7 +2,8 @@
 """
 Contains the class DBStorage
 """
-
+import pymysql
+pymysql.install_as_MySQLdb()
 import models
 from models.amenity import Amenity
 from models.base_model import BaseModel, Base
